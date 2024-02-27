@@ -1,6 +1,4 @@
 '''
-Created on 28.11.2018
-
 @author: mikaeltunturi
 '''
 from _hashlib import new
