@@ -1,6 +1,4 @@
 '''
-Created on 24.11.2018
-
 @author: mikaeltunturi
 '''
 # The Student-class represents one student on a course
