@@ -17,7 +17,7 @@ int count_isalpha(const char *str)
 {
     int number = 0;
 	while (*str != '\0') { //str päättyy merkkiin '\0'
-		if (isalpha(*str)) { // jostain syystä blackout, miksi * vasemmalla :D
+		if (isalpha(*str)) {
 			number++;
 		}
 		str++;
