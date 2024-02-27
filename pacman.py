@@ -99,23 +99,24 @@ class PacManState:
     # All successor states of a state
 
     def successors(self):
+        ### Implement this function (mine is 67 lines, w/ 4 aux functions)
+        ### You can come up with your own names for the different moves
         
-        # Let's create an empty list for (all) successor states.
+        # An empty list for successor states.
         successor_states = []
 
-        # Let's create a function to check whether the cell is empty
+        # A function to check whether the cell is empty.
         def cell_is_empty(x, y):
             return not self.grid.occupied(x,y)
         
-        # Let's create a function to move Pac-Man to a new position and add it to successor_states, in case the position is valid
+        # A function to move Pac-Man to a new position and add it to successor_states if valid.
         def move_pacman(dx, dy, new_direction):
             new_x = self.x + dx
             new_y = self.y + dy
-            # Let's check whether the cell is empty.
             if cell_is_empty(new_x, new_y):
                 successor_states.append((new_direction, PacManState(new_x, new_y, new_direction, self.grid)))
         
-        #Let's create a library for move actions.
+        # A dictionary for move actions.
         move_actions = {
             "N": lambda: move_pacman(0,1,"N"),
             "S": lambda: move_pacman(0,-1, "S"),
@@ -123,43 +124,34 @@ class PacManState:
             "W": lambda: move_pacman(-1,0,"W")
         }
 
-        # let's change the d based on the library 'move_actions'
+        # Apply move_actions based on current direction.
         move_actions[self.d]()
 
-        #successor state when turning left / going west "W"
-
-        state_after_turning_left = {
+        # The successor state after turning left (west).
+        turn_left = {
             "N": "W",
             "S": "E",
             "E": "N",
             "W": "S"
         }
+        move_actions[turn_left[self.d]]()
 
-        move_actions[state_after_turning_left[self.d]]()
-
-        # successor state when turning right/going east
-
-        state_after_turning_right = {
+        # The successor state after turning right (east).
+        turn_right = {
             "N": "E",
             "S": "W",
             "E": "S",
             "W": "N"
         }
+        move_actions[turn_right[self.d]]()
 
-        move_actions[state_after_turning_right[self.d]]()
-
-        # successor state after turning backwards / going south
-
-        state_after_turning_backwards = {
+        # The successor state after turning backwards (south).
+        turn_backwards = {
             "N": "S",
             "S": "N",
             "E": "W",
             "W": "E"
         }
-
-        move_actions[state_after_turning_backwards[self.d]]()
+        move_actions[turn_backwards[self.d]]()
 
         return successor_states
-
-### Implement this function (mine is 67 lines, w/ 4 aux functions)
-### You can come up with your own names for the different moves
