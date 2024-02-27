@@ -1,6 +1,4 @@
 '''
-Created on 29.10.2018
-
 @author: mikaeltunturi
 '''
 def read_names():
