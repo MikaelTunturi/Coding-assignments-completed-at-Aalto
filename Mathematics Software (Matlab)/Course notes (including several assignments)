@@ -1,5 +1,6 @@
 % This file is my notes from the course "Matematiikkaohjelmistot". 
 % It includes several small Matlab assignments, comments, and notes.
+% In the end, there is a small amount of R programming too.
 
 %{
 clc
