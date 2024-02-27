@@ -5,8 +5,6 @@
 # define BIT_MASK2 ((1 << 6) | (1 << 7))
 
 unsigned char sixBits(unsigned char v) {
-	unsigned char palautus = v & ~BIT_MASK2; // TÄMÄ MENI OIKEIN.
-	// ITSE OLEN SITÄ MIELTÄ, ETTÄ TÄMÄN VOISI TEHDÄ PAREMMIN SITEN,
-	// ETTÄ EI OLE VÄLIÄ ONKO BITTEJÄ ENEMMÄNKIN KUIN 8.
+	unsigned char palautus = v & ~BIT_MASK2;
 	return palautus;
 }
