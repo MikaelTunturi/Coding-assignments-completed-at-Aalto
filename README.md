@@ -1,6 +1,6 @@
 # Coding-assignments-completed-at-Aalto
-This repository contains coding assignments and projects completed during my courses at Aalto University.
+This repository contains some of the coding assignments and projects completed during my courses at Aalto University.
 
-The following programming languages are included in these assignments: Python, C, R, Matlab, CSS, HTML, and Dart.
+The following programming languages are used in these assignments: Python, C, Matlab, and Dart.
 
-These assignments are just examples. I also have several other assignments saved on my personal computer.
+I will be adding more assignments from the ongoing courses (related to ML and AI) in the upcoming weeks.
