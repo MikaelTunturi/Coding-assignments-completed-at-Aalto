@@ -1,6 +1,4 @@
 '''
-Created on 3.10.2018
-
 @author: mikaeltunturi
 '''
 import math
