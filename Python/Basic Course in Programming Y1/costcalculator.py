@@ -1,6 +1,4 @@
 '''
-Created on 16.10.2018
-
 @author: mikaeltunturi
 '''
 def main():
