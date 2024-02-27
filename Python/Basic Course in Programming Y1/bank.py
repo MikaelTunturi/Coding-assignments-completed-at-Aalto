@@ -1,6 +1,4 @@
 '''
-Created on 27.11.2018
-
 @author: mikaeltunturi
 '''
 import bank_account
