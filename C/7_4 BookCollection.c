@@ -35,11 +35,5 @@ struct book *add_to_collection(struct book *collection, unsigned int size, struc
   {       return NULL; // allocating memory did not work
       }  
   init_book(&new_collection[i], new_book.id, new_book.title, new_book.author, new_book.release_date);
-/*  new_collection[i].title = new_book.title;
-  new_collection[i].release_date.day = new_book.release_date.day;
-  new_collection[i].release_date.month = new_book.release_date.month;
-  new_collection[i].release_date.year = new_book.release_date.year;
-  new_collection[i].author = new_book.author;
-  new_collection[i].id = new_book.id;  */
   return new_collection;
 }
