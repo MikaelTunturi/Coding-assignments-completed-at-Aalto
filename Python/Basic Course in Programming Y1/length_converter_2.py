@@ -1,6 +1,4 @@
 '''
-Created on 4.10.2018
-
 @author: mikaeltunturi
 '''
 
