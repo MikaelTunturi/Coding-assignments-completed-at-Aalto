@@ -17,9 +17,8 @@ void simple_math(void)
 	
 	scanf("%f %c %f", &num1, &merkki, &num2);
 	
-	// miten whitespacet????
-	
-	// mitä seuraavaan if:iin????
+	// miten whitespacet?
+	// mitä seuraavaan if:iin?
 	
 	if (num1) { // MUISTA SULUT IF-LAUSEEN YHTEYDESSÄ.
 		if (num2) {
