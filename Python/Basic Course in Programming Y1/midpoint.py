@@ -1,7 +1,6 @@
 '''
 @author: mikaeltunturi
 '''
-
 from builtins import list
 
 def read_points():
